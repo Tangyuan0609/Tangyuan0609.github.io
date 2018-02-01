@@ -16,18 +16,19 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>css文件分类 | Hexo</title>
-  <meta name="description" content="一般网站分为三个样式文件，分别为reset.css(重置样式)，common.css(公共组件样式)，layout.css(当前页面样式) ##情况一 reset.css清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。 common.css一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证">
+  <title>Css-reset样式 | 汤圆博客</title>
+  <meta name="description" content="情况一reset.css清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。 common.css一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证全站所有页面头部一次替换生效，只需要把这些公共部门的样式提取出来，放在common.css文件中，这样既可以一次修改成功，比如翻页、表单（输入框、">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css文件分类">
+<meta property="og:title" content="Css-reset样式">
 <meta property="og:url" content="http://yoursite.com/2018/01/26/css-reset/index.html">
 <meta property="og:site_name" content="汤圆博客">
-<meta property="og:description" content="一般网站分为三个样式文件，分别为reset.css(重置样式)，common.css(公共组件样式)，layout.css(当前页面样式) ##情况一 reset.css清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。 common.css一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证">
+<meta property="og:description" content="情况一reset.css清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。 common.css一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证全站所有页面头部一次替换生效，只需要把这些公共部门的样式提取出来，放在common.css文件中，这样既可以一次修改成功，比如翻页、表单（输入框、">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-26T06:41:30.281Z">
+<meta property="og:updated_time" content="2018-02-01T07:38:14.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css文件分类">
-<meta name="twitter:description" content="一般网站分为三个样式文件，分别为reset.css(重置样式)，common.css(公共组件样式)，layout.css(当前页面样式) ##情况一 reset.css清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。 common.css一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证">
+<meta name="twitter:title" content="Css-reset样式">
+<meta name="twitter:description" content="情况一reset.css清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。 common.css一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证全站所有页面头部一次替换生效，只需要把这些公共部门的样式提取出来，放在common.css文件中，这样既可以一次修改成功，比如翻页、表单（输入框、">
   <!-- Canonical links -->
   <link rel="canonical" href="http://yoursite.com/2018/01/26/css-reset/index.html">
   
@@ -53,7 +54,7 @@
       
       
       <div class="profile-block text-center">
-        <a id="avatar" href="https://github.com/cofess" target="_blank">
+        <a id="avatar" href="https://github.com/Tangyuan0609" target="_blank">
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">汤圆</h2>
@@ -189,11 +190,9 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/Tangyuan0609" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
         <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
         
         <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
         
@@ -225,18 +224,39 @@
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/github/">github</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端/html/">html</a><span class="category-list-count">1</span></li></ul></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/css/" style="font-size: 13px;">css</a> <a href="/tags/github/" style="font-size: 13px;">github</a>
+    </div>
+  </div>
+
     
       
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -252,10 +272,25 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/前端/">前端</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/前端/html/">html</a>
               </p>
               <p class="item-title">
-                <a href="/2018/01/26/css-reset/" class="title">css文件分类</a>
+                <a href="/2018/01/26/css-reset/" class="title">Css-reset样式</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-01-26T06:20:35.134Z" itemprop="datePublished">2018-01-26</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/github/">github</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/01/26/github入门/" class="title">Github入门</a>
               </p>
               <p class="item-date">
                 <time datetime="2018-01-26T06:20:35.134Z" itemprop="datePublished">2018-01-26</time>
@@ -298,7 +333,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      css文件分类
+      Css-reset样式
     </h1>
   
 
@@ -311,7 +346,17 @@
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/前端/">前端</a>►<a class="article-category-link" href="/categories/前端/html/">html</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/css/">css</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -328,13 +373,10 @@
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <p>一般网站分为三个样式文件，分别为reset.css(重置样式)，common.css(公共组件样式)，layout.css(当前页面样式)</p>
-<p>##情况一</p>
-<h3 id="reset-css"><a href="#reset-css" class="headerlink" title="reset.css"></a>reset.css</h3><p>清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。</p>
+        <h2 id="情况一"><a href="#情况一" class="headerlink" title="情况一"></a>情况一</h2><h3 id="reset-css"><a href="#reset-css" class="headerlink" title="reset.css"></a>reset.css</h3><p>清除全站所有页面的浏览器默认样式，保证在初始样式在所有浏览器下一致。</p>
 <h3 id="common-css"><a href="#common-css" class="headerlink" title="common.css"></a>common.css</h3><p>一般一个网站所有页面头部、底部样式都是一致的，而且很长时间不会有大的改变，改变的大概就是产品、运营的经常需要添加、去掉某些入口的需求，要保证全站所有页面头部一次替换生效，只需要把这些公共部门的样式提取出来，放在common.css文件中，这样既可以一次修改成功，比如翻页、表单（输入框、按钮）等样式也是全站统一的，把这些样式都放到common.css里面，如果哪天所有的按钮样式要变更，一次替换就成功了。</p>
 <h3 id="layout-css"><a href="#layout-css" class="headerlink" title="layout.css"></a>layout.css</h3><p>公共组件以外的所有样式都写到这个样式文件里面，并且保证一个页面一个独立样式，页面html和css写法要模块化，保证迅速响应项目频繁的迭代。</p>
-<p>##情况二</p>
-<p>网站的样式分类也可以只有两个，即reset.css(重置样式)和layout.css(当前页面样式)，不要把什么东西都往组件样式里面塞，有写东西宁愿每个页面重复拷贝也不要塞到组件样式里面去。某一天，你会发现这个组件样式大得让你可怕，而且很多都是无用的。</p>
+<h2 id="情况二"><a href="#情况二" class="headerlink" title="情况二"></a>情况二</h2><p>网站的样式分类也可以只有两个，即reset.css(重置样式)和layout.css(当前页面样式)，不要把什么东西都往组件样式里面塞，有写东西宁愿每个页面重复拷贝也不要塞到组件样式里面去。某一天，你会发现这个组件样式大得让你可怕，而且很多都是无用的。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">charset</span> <span class="string">"utf-8"</span>;</span><br><span class="line"><span class="comment">/****** reset 基本样式重置 strat ******/</span></span><br><span class="line"><span class="comment">/* 清除内外边距 ---------- */</span></span><br><span class="line"><span class="selector-tag">html</span>,<span class="selector-tag">body</span>&#123; <span class="attribute">height</span>: <span class="number">100%</span>;&#125;</span><br><span class="line"><span class="selector-tag">body</span>, <span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>, <span class="selector-tag">h4</span>, <span class="selector-tag">h5</span>, <span class="selector-tag">h6</span>, <span class="selector-tag">hr</span>, <span class="selector-tag">p</span>, <span class="selector-tag">blockquote</span>, <span class="selector-tag">dl</span>, <span class="selector-tag">dt</span>, <span class="selector-tag">dd</span>, <span class="selector-tag">ul</span>, <span class="selector-tag">ol</span>, <span class="selector-tag">li</span>, <span class="selector-tag">pre</span>, <span class="selector-tag">fieldset</span>, <span class="selector-tag">lengend</span>, <span class="selector-tag">button</span>, <span class="selector-tag">input</span>, <span class="selector-tag">textarea</span>, <span class="selector-tag">th</span>, <span class="selector-tag">td</span> &#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 各种字体矫正 --------- */</span></span><br><span class="line"><span class="selector-tag">body</span>, <span class="selector-tag">button</span>, <span class="selector-tag">input</span>, <span class="selector-tag">select</span>, <span class="selector-tag">textarea</span> &#123; <span class="attribute">font</span>: <span class="number">14px</span>/<span class="number">1</span> Microsoft YaHei, Tahoma, Helvetica, Arial, <span class="string">"\5b8b\4f53"</span>, sans-serif; &#125;</span><br><span class="line"><span class="selector-tag">h1</span> &#123; <span class="attribute">font-size</span>: <span class="number">18px</span>; &#125;</span><br><span class="line"><span class="selector-tag">h2</span> &#123; <span class="attribute">font-size</span>: <span class="number">16px</span>; &#125;</span><br><span class="line"><span class="selector-tag">h3</span> &#123; <span class="attribute">font-size</span>: <span class="number">14px</span>; &#125;</span><br><span class="line"><span class="selector-tag">h4</span>, <span class="selector-tag">h5</span>, <span class="selector-tag">h6</span> &#123; <span class="attribute">font-size</span>: <span class="number">100%</span>; &#125;</span><br><span class="line"><span class="selector-tag">button</span>, <span class="selector-tag">input</span>, <span class="selector-tag">select</span>, <span class="selector-tag">textarea</span> &#123;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">outline</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">address</span>, <span class="selector-tag">cite</span>, <span class="selector-tag">dfn</span>, <span class="selector-tag">em</span>, <span class="selector-tag">var</span> &#123; <span class="attribute">font-style</span>: normal; &#125;</span><br><span class="line"><span class="selector-tag">code</span>, <span class="selector-tag">kbd</span>, <span class="selector-tag">pre</span>, <span class="selector-tag">samp</span>, <span class="selector-tag">tt</span> &#123; <span class="attribute">font-family</span>: <span class="string">"Courier New"</span>, Courier, monospace; &#125;</span><br><span class="line"><span class="selector-tag">small</span> &#123; <span class="attribute">font-size</span>: <span class="number">12px</span>; &#125;</span><br><span class="line"><span class="comment">/* 重置列表元素 --------- */</span></span><br><span class="line"><span class="selector-tag">ul</span>, <span class="selector-tag">ol</span> &#123; <span class="attribute">list-style</span>: none; &#125;</span><br><span class="line"><span class="comment">/* 重置文本格式元素 ----- */</span></span><br><span class="line"><span class="selector-tag">a</span> &#123; <span class="attribute">color</span>: <span class="number">#333</span>; &#125;</span><br><span class="line"><span class="selector-tag">a</span>, <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123; <span class="attribute">text-decoration</span>: none;  &#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;<span class="attribute">color</span>: <span class="number">#12833b</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span> &#123; <span class="attribute">outline</span>: none; &#125;</span><br><span class="line"><span class="selector-tag">abbr</span><span class="selector-attr">[title]</span>, <span class="selector-tag">acronym</span><span class="selector-attr">[title]</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">1px</span> dotted;</span><br><span class="line">	<span class="attribute">cursor</span>: help;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">q</span><span class="selector-pseudo">:before</span>, <span class="selector-tag">q</span><span class="selector-pseudo">:after</span> &#123; <span class="attribute">content</span>: <span class="string">''</span>; &#125;</span><br><span class="line"><span class="comment">/* 重置表单元素 ------- */</span></span><br><span class="line"><span class="selector-tag">legend</span> &#123; <span class="attribute">color</span>: <span class="number">#000</span>; &#125;</span><br><span class="line"><span class="selector-tag">fieldset</span>, <span class="selector-tag">img</span> &#123; <span class="attribute">border</span>: none; &#125;</span><br><span class="line"><span class="comment">/* 重置表格元素 ------ */</span></span><br><span class="line"><span class="selector-tag">table</span> &#123;</span><br><span class="line">	<span class="attribute">border-collapse</span>: collapse;</span><br><span class="line">	<span class="attribute">border-spacing</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">table</span> <span class="selector-tag">th</span> &#123; <span class="attribute">font-weight</span>: normal; &#125;</span><br><span class="line"><span class="comment">/* 重置 hr --------- */</span></span><br><span class="line"><span class="selector-tag">hr</span> &#123;</span><br><span class="line">	<span class="attribute">border</span>: none;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">1px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/****** reset 基本样式重置 end   ******/</span></span><br><span class="line"><span class="comment">/****** 复用性样式设置 strat ******/</span></span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">"\200B"</span>;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix &#123; *zoom:1;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clear</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>:block; </span><br><span class="line">	<span class="attribute">clear</span>:both; </span><br><span class="line">	<span class="attribute">font-size</span>:<span class="number">0</span>; </span><br><span class="line">	<span class="attribute">line-height</span>:<span class="number">0</span>; </span><br><span class="line">	<span class="attribute">height</span>:<span class="number">0</span>; </span><br><span class="line">	<span class="attribute">overflow</span>:hidden; </span><br><span class="line">	<span class="attribute">content</span>:<span class="string">"."</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/****** 复用性样式设置 end   ******/</span></span><br></pre></td></tr></table></figure>
 
       
@@ -345,7 +387,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2018/01/26/css-reset/" title="css文件分类" target="_blank" rel="external">http://yoursite.com/2018/01/26/css-reset/</a>
+      <a href="http://yoursite.com/2018/01/26/css-reset/" title="Css-reset样式" target="_blank" rel="external">http://yoursite.com/2018/01/26/css-reset/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -359,12 +401,12 @@
   <div class="panel-body">
     <figure class="media">
       <div class="media-left">
-        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+        <a href="https://github.com/Tangyuan0609" target="_blank" class="img-burn thumb-sm visible-lg">
           <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">汤圆</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <h3 class="media-heading"><a href="https://github.com/Tangyuan0609" target="_blank"><span class="text-dark">汤圆</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
         <div>个人简介。</div>
       </div>
     </figure>
@@ -395,7 +437,7 @@
     
     
     <li class="next">
-      <a href="/2018/01/26/hello-world/" title="Hello World">下一篇&nbsp;&nbsp;<i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2018/01/26/github入门/" title="Github入门">下一篇&nbsp;&nbsp;<i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
   </ul>
@@ -460,11 +502,9 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/Tangyuan0609" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
         <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
         
         <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
         
